@@ -24,8 +24,9 @@ public class StreamApiDemo {
         }
         catch(IllegalStateException e)
         {
-            System.out.println(e.toString());
+            System.out.println("Exception in StreamApiDemo"+e.toString());
         }
         numList.stream().map(n->n*2).forEach(n-> System.out.println(n));
+
     }
 }
